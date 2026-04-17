@@ -16,4 +16,10 @@
         android:name="ru.mirea.khrechkorv.mireaproject.ui.DataFragment"
         android:label="@string/menu_data"
         tools:layout="@layout/fragment_data" />
+
+    <fragment
+        android:id="@+id/nav_worker"
+        android:name="ru.mirea.khrechkorv.mireaproject.ui.WorkerFragment"
+        android:label="@string/menu_worker"
+        tools:layout="@layout/fragment_worker" />
 </navigation>
