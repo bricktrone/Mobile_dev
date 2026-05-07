@@ -22,4 +22,22 @@
         android:name="ru.mirea.khrechkorv.mireaproject.ui.WorkerFragment"
         android:label="@string/menu_worker"
         tools:layout="@layout/fragment_worker" />
+
+    <fragment
+        android:id="@+id/nav_sensor"
+        android:name="ru.mirea.khrechkorv.mireaproject.ui.SensorFragment"
+        android:label="@string/menu_sensor"
+        tools:layout="@layout/fragment_sensor" />
+
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="ru.mirea.khrechkorv.mireaproject.ui.CameraFragment"
+        android:label="@string/menu_camera"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/nav_recorder"
+        android:name="ru.mirea.khrechkorv.mireaproject.ui.RecorderFragment"
+        android:label="@string/menu_recorder"
+        tools:layout="@layout/fragment_recorder" />
 </navigation>
