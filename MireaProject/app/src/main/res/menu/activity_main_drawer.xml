@@ -28,5 +28,13 @@
             android:id="@+id/nav_recorder"
             android:icon="@android:drawable/ic_btn_speak_now"
             android:title="@string/menu_recorder" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_file"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_file" />
     </group>
 </menu>

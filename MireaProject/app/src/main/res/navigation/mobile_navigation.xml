@@ -40,4 +40,16 @@
         android:name="ru.mirea.khrechkorv.mireaproject.ui.RecorderFragment"
         android:label="@string/menu_recorder"
         tools:layout="@layout/fragment_recorder" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ru.mirea.khrechkorv.mireaproject.ui.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_file"
+        android:name="ru.mirea.khrechkorv.mireaproject.ui.FileConverter.FileFragment"
+        android:label="@string/menu_file"
+        tools:layout="@layout/fragment_files" />
 </navigation>
