@@ -40,5 +40,9 @@
             android:id="@+id/nav_recourse"
             android:icon="@android:drawable/ic_menu_search"
             android:title="@string/menu_recourse" />
+        <item
+            android:id="@+id/nav_places"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/menu_places" />
     </group>
 </menu>

@@ -27,8 +27,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     buildFeatures {
         viewBinding = true
@@ -39,6 +39,7 @@ dependencies {
 
     implementation ("com.google.android.material:material:1.9.0")
     implementation("androidx.work:work-runtime:2.8.1")
+    implementation("com.yandex.android:maps.mobile:4.33.1-full")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
