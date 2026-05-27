@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TImeService</string>
+    <string name="error_get_time">Error: Failed to get time</string>
+    <string name="unexpected_format">Unexpected data format</string>
+    <string name="date_time_format">Date: %1$s \nTime: %2$s</string>
+</resources>
