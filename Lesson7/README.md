@@ -1,4 +1,4 @@
-# Отчет по практической работе №6
+# Отчет по практической работе №7
 ## Дисциплина: Разработка мобильных приложений
 
 **Выполнил:** Студент группы БСБО-09-23  
@@ -17,8 +17,9 @@
 
 ## 2. Выполнение модулей `Lesson7`
 
-### 2.1 Модуль `timeService` сохранение данных в `SharedPreferences`
+### 2.1 Модуль `timeService`
 **Задание:** реализовать подключение к серверу `time.nist.gov` по порту `13`
+![time.png](images/time.png)
 
 **Листинг `SocketUtils.java`:**
 ```Java
@@ -110,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
 - по координатам выполняется запрос к `https://api.open-meteo.com/`;
 - на экран выводятся IP, город, регион, страна, координаты и текущая погода;
 - при ошибках отображается понятное состояние интерфейса.
+![http.png](images/http.png)
 
 **Листинг `MainActivity.java`:**
 ```Java
@@ -269,6 +271,7 @@ public class MainActivity extends AppCompatActivity {
 - отправка письма для подтверждения email;
 - ручное обновление статуса пользователя;
 - динамическое изменение интерфейса в зависимости от состояния авторизации.
+![auth.png](images/auth.png)
 
 **Листинг класса `MainActivity.java`:**
 ```Java
@@ -551,6 +554,7 @@ public class LoginActivity extends AppCompatActivity {
 
 Выведен email пользователя, статус верификации и кнопки управления аккаунтом.
 Реализована отправка письма подтверждения, обновление статуса и выход из аккаунта.
+![mirea_project.png](images/mirea_project.png)
 
 **Листинг `InternetRecourceFragment.java`:**
 ```Java

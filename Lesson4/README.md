@@ -173,6 +173,7 @@ Thread t = new Thread(new Runnable() {
 
 ### 3.4 Модуль `CryptoLoader` (Асинхронная дешифровка)
 **Задание:** Реализовать шифрование AES в главном потоке и расшифровку в `Loader`.
+![cryptoloader.png](images/cryptoloader.png)
 
 **Листинг `MainActivity.java` с шифровкой:**
 ```Java
@@ -313,6 +314,7 @@ public class MyLoader extends AsyncTaskLoader<String> {
     android:name=".PlayerService"
     android:foregroundServiceType="mediaPlayback" />
 ```
+![serviceApp.png](images/serviceApp.png)
 
 **Листинг `PlayerService.java` метод onCreate и onStartCommand:**
 ```Java
@@ -416,7 +418,7 @@ public class MyWorker extends Worker {
 * **`mobile_navigation.xml`**: добавлен фрагмент `nav_worker`.
 * **`MainActivity.java`**: ID добавлен в `AppBarConfiguration`.
 * **`activity_main_drawer.xml`**: добавлен пункт меню.
-
+![mireaProject.png](images/mireaProject.png)
 ---
 
 ## 5. Вывод

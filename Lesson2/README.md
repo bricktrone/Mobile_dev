@@ -171,6 +171,7 @@ public void onClickNewActivity(View view) {
 С помощью неявных намерений реализовано открытие вебстраницы и отправка в другие приложения. В данном случае приложение
 не обращается к конкретному приложению, а сообщает, что новое приложение должно выполнить. В случае вебстраницы откроется
 стандартный браузер.
+![intentfilter.png](images/intentfilter.png)
 
 **Листинг MainActivity.java:**
 
@@ -194,6 +195,7 @@ public void onClickNewActivity(View view) {
 
 В данном модуле изучается вывод небольших сообщений `Toast`, для сообщения пользователю. Был реализован метод, который при
 нажатии на кнопку выведет длину текста в поле ввода.
+![toast.png](images/toast.png)
 
 **Листинг MainActivity.java:**
 
@@ -210,6 +212,7 @@ public void onClickNewActivity(View view) {
 
 Для создания уведомления сначала в методе `onCreate` происходит проверка наличия прав на отправку уведомлений.
 После этого метод `onClickSendNotification` при нажатии на кнопку создаёт уведомление с выбранными данными.
+![notification.png](images/notification.png)
 
 **Листинг MainActivity.java:**
 
@@ -269,6 +272,7 @@ public class MainActivity extends AppCompatActivity {
 3. `MyDateDialogFragment` - аналогично выбору времени, но этот класс позволяет выбрать дату.
 4. `MyProgressDialogFragment` - открывает окно, которое отображает вечную загрузку. При закрытии этого окна,
 при нажатии на другое место на экране вызовется сообщение о закрытии окна.
+![dialog.png](images/dialog.png)
 
 **Листинг AlertDialogFragment.java:**
 

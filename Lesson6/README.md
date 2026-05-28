@@ -20,6 +20,7 @@ sql хранилищем. После этого реализовать изуч�
 **Задание:** Создать экран с вводом значений, которые должны сохраняться после полного перезапуска приложения.
 
 Изображение о сохранении находится в папке `app/res/raw`
+![saved_values_image.png](app/src/main/res/raw/saved_values_image.png)
 
 **Листинг `MainActivity.java`:**
 ```Java
@@ -66,6 +67,7 @@ sql хранилищем. После этого реализовать изуч�
 **Задание:** Создать экран с вводом имени любимого поэта, а после чего эту информацию нужно зашифровать.
 
 Изображение о сохранении находится в папке `app/res/raw`
+![2_value_save_image.png](securesharedpreferences/src/main/res/raw/2_value_save_image.png)
 
 **Листинг `MainActivity.java`:**
 ```Java
@@ -115,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
 **Задание:** Сохранить текст о важной дате в истории России в отдельный файл
 
 Файл о сохранении находится в папке `app/res/raw`
+![internal_storage.png](images/internal_storage.png)
 
 **Листинг класса `MainActivity.java`:**
 ```Java
@@ -204,6 +207,7 @@ public class MainActivity extends AppCompatActivity {
 **Задание:** Создать приложение для создания цитат, которые должны записываться в отдельные файлы.
 
 Файлы о сохранении находится в папке `app/res/raw`
+![notebook.png](images/notebook.png)
 
 **Листинг `MainActivity.java`:**
 ```Java
@@ -419,6 +423,8 @@ public interface EmployeeDao {
 
 ### 3.1. Создан фрагмент `ProfileFragment` с профилем пользователя
 Фрагмент позволяет заполнить информацию о себе, которая будет сохранена при последующих использованиях.
+![profile.png](images/profile.png)
+
 **Листинг `ProfileFragment.java`:**
 ```Java
 public class ProfileFragment extends Fragment {
@@ -472,6 +478,7 @@ public class ProfileFragment extends Fragment {
 
 Пользователь может создать файл одного из трёх типов: txt, json и xml. После чего может ввести текст в этот файл.
 Дальше пользователь может конвертировать эти файлы в другие типы, редактировать текст, а также удалять ненужные.
+![files.png](images/files.png)
 
 **Листинг `FileFragment.java`:**
 ```Java

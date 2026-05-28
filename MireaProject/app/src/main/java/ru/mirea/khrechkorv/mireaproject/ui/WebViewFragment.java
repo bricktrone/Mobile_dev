@@ -33,7 +33,7 @@ public class WebViewFragment extends Fragment {
 
         webView.setWebViewClient(new WebViewClient());
 
-        webView.loadUrl("https://mirea.ru");
+        webView.loadUrl("https://www.google.com/");
 
         return view;
     }
