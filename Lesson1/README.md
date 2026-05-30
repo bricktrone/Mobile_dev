@@ -26,6 +26,7 @@
 
 #### 1.1 LinearLayout
 В первом случае был создан линейный вертикальный контейнер, который хранит два других линейных контейнера. Два контейнера горизонтальные и хранят по 3 кнопки. Всем кнопкам были выставлены равные веса `layout_weight="1"`.
+
 ![LinearLayout.png](images/LinearLayout.png)
 
 **Листинг `res/layout/linear_layout.xml`:**
@@ -100,6 +101,7 @@
 1. 2 кнопки и текст;
 2. Кнопка и checker box;
 3. Кнопка с изображением и 2 обычные кнопки.
+
 ![TableLayout.png](images/TableLayout.png)
 
 **Листинг res/layout/table_layout.xml:**
@@ -193,6 +195,7 @@
 #### 2.1 Создание интерфейса карточки контакта
 
 Первой задачей является создание интерфейса карточки контакта с помощью ConstraintLayout. Были использованы ImageView, TextView, EditText и Button. Часть элементов была заключена в таблицу, которая соединена с ImageView с помощью ConstraintLayout.
+
 ![control_lesson_1.png](images/control_lesson_1.png)
 
 **Листинг res/layout/activity_main.xml:**
@@ -334,6 +337,7 @@
 #### 2.2 Смена ориентации экрана
 
 Для изучения изменения интерфейса под смену ориентации экрана был создан интерфейс с 6 кнопками для портретной разметки activity_second.xml, а также дополнительный файл разметки с пометкой land для горизонтального положения экрана. Также в классе MainActivity был изменён выбор layot, чтобы запускался новый файл, а не карточка контакта.
+
 ![Orientations.png](images/Orientations.png)
 
 **Листинг MainActivity.java:**
@@ -364,6 +368,7 @@ public class MainActivity extends AppCompatActivity {
 
 ### Задание 3. Модуль ButtonClicker
 Требуется создать интерфейс из двух кнопок, которые изменяют текст и значение checkerbox. Для этого используется два способа. Для первой кнопки создаётся метод внутри метода OnCreate и передаётся нужной копки через setOnClickListener. Вторая кнопка настраивается через файл разметки, для кнопки описывается название метода в поле атрибута onClick.
+
 ![ButtonClicker.png](images/ButtonClicker.png)
 
 **Листинг MainActivity.java:**

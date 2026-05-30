@@ -34,6 +34,7 @@
 **Цель:** Передача данных через `Intent` и их обработка на втором экране.
 В `MainActivity` реализовано получение системного времени в формате `yyyy-MM-dd HH:mm:ss`.
 Данные переданы во вторую Activity через `putExtra`.
+
 ![intent.png](images/intent.png)
 
 **Листинг кода (передача данных):**
@@ -52,6 +53,7 @@ startActivity(intent);
 ### 3.2 Модуль `Sharer`
 **Цель:** Использование неявного намерения `ACTION_SEND`.
 Приложение вызывает системный диалог выбора приложения для отправки текстовых данных.
+
 ![sharer.png](images/sharer.png)
 
 **Листинг кода:**
@@ -66,6 +68,7 @@ startActivity(Intent.createChooser(intent, "Выбор за вами!"));
 **Цель:** Получение данных от дочерней активности через `ActivityResult API`.
 Реализован контракт `StartActivityForResult`. Главная активность ожидает ввод названия книги от пользователя
 во второй активности и обновляет `TextView` после завершения работы второго экрана.
+
 ![book.png](images/book.png)
 
 **Листинг класса MainActivity:**
@@ -173,6 +176,7 @@ private EditText inputText;
 Созданы два фрагмента (`FirstFragment`, `SecondFragment`).
 * В вертикальной ориентации переключение реализовано программно через `FragmentManager` и `beginTransaction()`.
 * В горизонтальной ориентации (`layout-land`) фрагменты размещены статично с помощью `FragmentContainerView` для отображения обоих фрагментов одновременно.
+
 ![fragment.png](images/fragment.png)
 
 **Листинг класса MainActivity**
@@ -213,6 +217,7 @@ private EditText inputText;
 1. **Навигационный граф:** Фрагменты добавлены в `mobile_navigation.xml`.
 2. **Меню:** Пункты меню добавлены в `activity_main_drawer.xml` с ID, соответствующими ID фрагментов, а также строковыми значениями из файла `strings.xml`.
 3. **Логика MainActivity:** Изменены объекты фрагментов, чтобы поменять на созданные.
+
 ![mireaProject.png](images/mireaProject.png)
 
 **Листинг настройки навигации:**

@@ -21,6 +21,7 @@
 
 ### 2.1 Модуль `app` Список датчиков
 **Задание:** Создать список датчиков, для изучения их работы.
+
 ![app.png](images/app.png)
 
 **Листинг `MainActivity.java`:**
@@ -64,6 +65,7 @@
 **Задание:** Создать акселерометр, для отображения ускорения по 3 осям.
 
 Для реализации класс реализует `SensorEventListener` и его методы `onPause` и `onResume`
+
 ![accel.png](images/accel.png)
 
 **Листинг `MainActivity.java`:**
@@ -407,7 +409,9 @@ private static final int REQUEST_CODE_PERMISSION = 200;
 
 ### 3.1. Создан фрагмент `SensorFragment` с датчиком направления
 Фрагмент позволяет увидеть угол как в компасе, а также сторону света.
+
 ![img.png](img.png)
+
 **Листинг `SensorFragment.java`:**
 ```Java
 package ru.mirea.khrechkorv.mireaproject.ui;
@@ -545,6 +549,7 @@ public class SensorFragment extends Fragment implements SensorEventListener {
 
 Пользователь может сделать фотографию и подписать её. Когда будет сделана следующая фотография прошлая
 подпись пропадёт автоматически.
+
 ![mirea_sensor.png](images/mirea_sensor.png)
 
 **Листинг `CameraFragment.java`:**

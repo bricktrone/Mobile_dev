@@ -74,7 +74,6 @@ public class WorkerFragment extends Fragment {
         WorkRequest uploadWorkRequest =
                 new OneTimeWorkRequest.Builder(MyWorker.class)
                         .build();
-        WorkManager.getInstance(requireContext()).enqueue(uploadWorkRequest);
         return inflater.inflate(R.layout.fragment_worker, container, false);
     }
 

@@ -47,6 +47,12 @@
             android:hint="Любимый фильм" />
 
         <Button
+            android:id="@+id/buttonLoadProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Загрузить профиль из Firebase" />
+
+        <Button
             android:id="@+id/buttonSaveProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

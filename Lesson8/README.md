@@ -22,6 +22,7 @@
 - Добавить API ключ; 
 - Добавить разрешения `ACCESS_COARSE_LOCATION` `ACCESS_FINE_LOCATION` `ACCESS_BACKGROUND_LOCATION` `INTERNET`;
 - Добавить библиотеку для яндекс карт `implementation("com.yandex.android:maps.mobile:4.33.1-full")`;
+
 ![yandex_map.png](images/yandex_map.png)
 
 **Листинг `MainActivity.java`:**
@@ -136,7 +137,8 @@ public class MainActivity extends AppCompatActivity implements UserLocationObjec
 Был построен маршрут между двумя зданиями МИРЭА.
 
 ![driver.png](images/driver.png)
-- 
+
+
 **Листинг `MainActivity.java`:**
 ```Java
 public class MainActivity extends AppCompatActivity implements DrivingSession.DrivingRouteListener {

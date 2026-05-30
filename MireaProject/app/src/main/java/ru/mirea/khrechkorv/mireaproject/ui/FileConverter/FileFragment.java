@@ -84,9 +84,6 @@ public class FileFragment extends Fragment implements FileAdapter.OnFileActionLi
         }
     }
 
-    /**
-     * Диалоговое окно создания файла с выбором формата
-     */
     public void showCreateFileDialog() {
         View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_create_file, null);
         EditText etName = dialogView.findViewById(R.id.editTextFileName);
@@ -123,9 +120,6 @@ public class FileFragment extends Fragment implements FileAdapter.OnFileActionLi
                 .show();
     }
 
-    /**
-     * Форматирование содержимого в зависимости от типа файла
-     */
     private String formatContentByType(String content, String extension) {
         switch (extension) {
             case ".json":
@@ -166,9 +160,6 @@ public class FileFragment extends Fragment implements FileAdapter.OnFileActionLi
         }
     }
 
-    /**
-     * Конвертация файлов между форматами
-     */
     private void convertFile(FileItem fileItem) {
         File file = fileItem.getFile();
         String fileName = file.getName();
@@ -273,9 +264,6 @@ public class FileFragment extends Fragment implements FileAdapter.OnFileActionLi
         return content;
     }
 
-    /**
-     * Удаление файла
-     */
     private void deleteFile(FileItem fileItem) {
         new AlertDialog.Builder(getContext())
                 .setTitle("Удалить файл")
@@ -293,9 +281,6 @@ public class FileFragment extends Fragment implements FileAdapter.OnFileActionLi
                 .show();
     }
 
-    /**
-     * Просмотр содержимого файла
-     */
     private void viewFileContent(FileItem fileItem) {
         try {
             String content = readFileContent(fileItem.getFile());
@@ -318,9 +303,6 @@ public class FileFragment extends Fragment implements FileAdapter.OnFileActionLi
         }
     }
 
-    /**
-     * Редактирование файла
-     */
     private void showEditFileDialog(FileItem fileItem) {
         try {
             String content = readFileContent(fileItem.getFile());
